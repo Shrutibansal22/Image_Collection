@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Filters</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #canvasContainer {
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+      border: 1px solid #000;
+    }
+
+    #canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvasContainer">
+    <canvas id="canvas" width="400" height="300"></canvas>
+  </div>
+  <input type="file" id="fileInput">
+  <select id="filterSelect">
+    <option value="none">Select Filter</option>
+    <option value="blur">Blur</option>
+    <option value="invert">Invert</option>
+    <option value="grayscale">Grayscale</option>
+    <option value="brightness">Brightness</option>
+    <option value="sepia">Sepia</option>
+  </select>
+  
+
+  <script src="script.js"></script>
+  
+  
+</body>
+</html>
